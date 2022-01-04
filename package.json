@@ -1,0 +1,36 @@
+{
+  "name": "@concord-consortium/topology-tagger",
+  "version": "1.0.0",
+  "description": "SageModeler/Building Models topology tagger",
+  "main": "./lib/topology-tagger.js",
+  "types": "./lib/topology-tagger.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "publish:public": "npm run build && npm publish --access public",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/concord-consortium/topology-tagger.git"
+  },
+  "author": "Noah Paessel, Dave Love and Doug Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/concord-consortium/topology-tagger/issues"
+  },
+  "homepage": "https://github.com/concord-consortium/topology-tagger#readme",
+  "dependencies": {
+    "@types/graphlib": "^2.1.4",
+    "@types/node": "^12.15.0",
+    "graphlib": "^2.1.7",
+    "lodash": "3.3.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.9.4"
+  }
+}
